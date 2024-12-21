@@ -78,3 +78,7 @@ def insert_initial_user_data():
         print(e)
     finally:        
         conn.close()
+
+
+create_users_table()
+insert_initial_user_data()
