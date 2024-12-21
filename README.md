@@ -1,2 +1,3 @@
-# ticketingsystem
-A python ticketing system project I made as a school project, it uses tkinter as GUI and mysql as database.
+# Python Ticketing System with TKinter GUI
+A ticketing system with Tkinter GUI and MySQL database.
+The database_guide.py should be run first before starting main.py
