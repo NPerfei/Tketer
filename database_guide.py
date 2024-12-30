@@ -1,11 +1,8 @@
 '''
-The system uses a MySQL database to store data.
-The host, user, password, and database name are hardcoded into the database_manager.py file.
-'''
+The database name is tketer (can be changed in the code).
 
-'''
 The table names are also hardcoded, they are:
-*the `users` table is not automatically created by database_manager. Manual.
+*the `users` table is not automatically created by database_manager. Create it by running this file.
 
 users
 SCHEMA:
@@ -44,7 +41,7 @@ def create_users_table():
     conn = mql.connect(
             user = 'root', password='1234',
             host='127.0.0.1',
-            database='ticketingsystem'
+            database='tketer'
         )
     cursor = conn.cursor()
 
@@ -65,7 +62,7 @@ def insert_initial_user_data():
     conn = mql.connect(
             user = 'root', password='1234',
             host='127.0.0.1',
-            database='ticketingsystem'
+            database='tketer'
         )
     cursor = conn.cursor()
 
