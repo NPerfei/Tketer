@@ -39,7 +39,7 @@ import mysql.connector as mql
 
 def create_users_table():
     conn = mql.connect(
-            user = 'root', password='1234',
+            user = 'tketer_user', password='ILoveTickets',
             host='127.0.0.1',
             database='tketer'
         )
@@ -60,7 +60,7 @@ def create_users_table():
 
 def insert_initial_user_data():
     conn = mql.connect(
-            user = 'root', password='1234',
+            user = 'tketer_user', password='ILoveTickets',
             host='127.0.0.1',
             database='tketer'
         )

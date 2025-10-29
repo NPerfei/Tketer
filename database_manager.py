@@ -10,7 +10,7 @@ class DatabaseManager:
     def get_connection(self):
         try:
             self.connection = mql.connect(
-            user = 'root', password='1234',
+            user = 'tketer_user', password='ILoveTickets',
             host='127.0.0.1',
             database='tketer'
             )

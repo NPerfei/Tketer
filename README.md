@@ -33,5 +33,12 @@ By default, it will connect to a database named **tketer**. Simply create a tabl
 ```mysql
 CREATE DATABASE tketer;
 ```
+The application defaults to using *tketer_user* with a password of *ILoveTickets* to communicate with the db. You can change the configuration inside database_manager.py or keep it as is by creating the user:
+```mysql
+CREATE USER tketer_user@localhost IDENTIFIED BY 'ILoveTickets';
+GRANT ALL PRIVILEGES ON tketer.* TO tketer_user@localhost;
+```
 
 Run the *database_guide.py* first. This will create a user table used to log in to the application. The defaults are in the file, change them as needed.
+
+Finally, run **main.py** to start the application.
